@@ -1,0 +1,149 @@
+.CheckOutPage {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    margin-top: 120px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #222;
+}
+
+.cartList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+.cartList::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cartList::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+}
+
+.cartList::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+.cartItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.details {
+    flex: 1;
+}
+
+.details h2 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem;
+    color: #111;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-weight: 600;
+    color: #333;
+}
+
+.subtotal {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1d4ed8;
+    margin-top: 0.2rem;
+}
+
+.summary {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.summary h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.checkoutBtn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.checkoutBtn:hover {
+    background: #1e40af;
+}
+
+.loader,
+.empty {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 120px;
+    color: #666;
+}
+
+.loaderBtn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-top: 2px solid transparent;
+    animation: rotat 0.8s linear infinite
+}
+
+.checkoutBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@keyframes rotat {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

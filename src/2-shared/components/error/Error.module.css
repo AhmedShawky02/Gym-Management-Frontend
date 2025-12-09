@@ -1,0 +1,13 @@
+.mainError {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(90deg, #CD4E17, #9A070E);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 120px;
+    font-size: 25px;
+}

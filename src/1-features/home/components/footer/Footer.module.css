@@ -1,0 +1,188 @@
+.Footer_section {
+    overflow: hidden;
+    background-color: #181818;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 60px 30px;
+    max-width: 1400px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    width: 50%;
+}
+
+.descTitle {
+    color: #888888;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.descTitle span:nth-child(1) {
+    color: #D90A14;
+}
+
+.descTitle span:nth-child(2) {
+    color: #CD4E17;
+}
+
+
+.descData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: start;
+    gap: 5px;
+    color: rgb(214, 214, 214);
+    margin-bottom: 20px;
+}
+
+.descData p {
+    font-size: 20px;
+}
+
+.logoData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoData strong {
+    font-size: 25px;
+}
+
+.logoData img {
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid #CD4E17;
+    box-shadow: 0 0 5px #CD4E17;
+}
+
+.links {
+    margin-top: 25px;
+    display: flex;
+    gap: 100px;
+}
+
+.links a {
+    color: white;
+    font-size: 30px;
+}
+
+.CompanyContactContainer {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.Company,
+.Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 25px;
+}
+
+.Company h2 {
+    color: #D90A14;
+}
+
+.Contact h2 {
+    color: #CD4E17;
+}
+
+.CompanyData,
+.ContactData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.ContactData {
+    align-items: start;
+    color: #888888;
+}
+
+.ContactData p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.ContactIcon {
+    color: white;
+}
+
+.CompanyData a {
+    color: #888888;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 855px) {
+    .container {
+        flex-direction: column;
+        padding: 30px;
+
+    }
+
+
+    .description {
+        width: 100%;
+    }
+
+    .links {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0 30px;
+    }
+
+    .Company {
+        margin-bottom: 25px;
+    }
+
+    .CompanyContactContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 80px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .links {
+        margin-top: 0px;
+        gap: 60px;
+    }
+
+    .links a {
+        font-size: 25px;
+    }
+
+    .descTitle {
+        color: #888888;
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+
+    .CompanyContactContainer {
+        gap: 40px;
+    }
+
+}

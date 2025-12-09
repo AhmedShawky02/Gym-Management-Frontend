@@ -1,0 +1,146 @@
+.Trainers_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    min-height: 600px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Trainers_section .title {
+    color: #fff;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+.Trainers_section .span_title {
+    color: #D90A14;
+}
+
+.Trainers_section .suptitle {
+    color: white;
+    padding: 0 30px;
+}
+
+.trainer_image,
+.trainer_image_Wrapper {
+    width: 300px;
+    margin: auto;
+}
+
+.trainer_image {
+    display: block;
+
+}
+
+.trainer_image_Wrapper {
+    position: relative;
+    background-color: #1D1D1D;
+    z-index: -1;
+    border-radius: 10px 10px 0 0;
+}
+
+.trainer_image_Wrapper::after,
+.trainer_image_Wrapper::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    z-index: -1;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, transparent 70%);
+}
+
+.trainer_image_Wrapper::after {
+    left: 55%;
+    background: radial-gradient(circle, #77060c8a, transparent 70%);
+}
+
+.trainer_image_Wrapper::before {
+    left: 45%;
+    background: radial-gradient(circle, #cd4e173b, transparent 70%);
+}
+
+.trainerData {
+    background-color: #262626;
+    text-align: start;
+    color: rgb(219, 219, 219);
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding: 15px;
+}
+
+.trainer_name {
+    margin: 5px 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.trainer_specialization {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.trainers_list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-items: center;
+    position: relative;
+}
+
+.trainers_list::after {
+    content: "";
+    position: absolute;
+    width: 1800px;
+    height: 700px;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+    background: radial-gradient(ellipse, #77060c4b, transparent 70%);
+}
+
+.trainer {
+    border: 1px solid #77060c27;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #77060c75;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.trainer:hover{
+    transform: translateY(-10px);
+}
+
+.btnViewAll {
+    margin: 10px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    align-items: center;
+    padding: 13px 25px;
+    border-radius: 15px;
+    background-color: transparent;
+    outline: 2px solid #CD4E17;
+    color: #CD4E17;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    text-decoration: none;
+}
+
+.btnViewAll:hover {
+    background-color: #CD4E17;
+    color: black;
+    transform: translateY(-5px)
+}

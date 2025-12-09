@@ -1,0 +1,138 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    z-index: 12;
+}
+
+.logoLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.logo img {
+    margin: 5px;
+    width: 80px;
+    height: 80px;
+    outline: 1.5px solid #CD4E17;
+
+    border-radius: 50%;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.navbar_menu span {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.navbar_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logout,
+.Cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.navbar_link:hover,
+.logout:hover,
+.Cart:hover .icon {
+    transition: .3s ease;
+    color: red;
+}
+
+.burger {
+    color: white;
+    background: none;
+    border: none;
+    display: none;
+}
+
+.Icon,
+.IconX {
+    font-size: 45px;
+}
+
+.CartContainer button {
+    position: relative;
+}
+
+.allItemQuantity {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar_menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .overrideMenuOpenBlack {
+        background-color: rgba(0, 0, 0, 0.397);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .navbar_menu.open {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        padding: 20px 50px;
+        position: absolute;
+        top: 0;
+        width: 350px;
+        height: 100vh;
+        left: 0;
+        flex-direction: column;
+        background-color: red;
+    }
+}

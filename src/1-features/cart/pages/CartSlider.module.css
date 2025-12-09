@@ -1,0 +1,223 @@
+.cartOverrideContainer {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.356);
+    z-index: 111;
+    top: 0;
+    left: 0;
+}
+
+.CartContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 111;
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 16px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-out;
+    position: relative;
+}
+
+.cartItem:hover {
+    transform: translateY(-2px);
+}
+
+.cartItem img {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.cart {
+    position: absolute;
+    width: 400px;
+    height: 100vh;
+    background-color: #1D1D1D;
+    right: 0;
+    padding: 30px 20px;
+}
+
+.ListCart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 92%;
+}
+
+.oneCart {
+    flex: 1;
+    max-height: 75vh;
+    overflow-y: scroll;
+    padding-right: 8px;
+}
+
+.oneCart::-webkit-scrollbar {
+    width: 6px;
+}
+
+.oneCart::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+}
+
+.oneCart::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+
+.cart h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #eee;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart h2 svg {
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.type {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.price span {
+    font-weight: 600;
+    color: #222;
+}
+
+.totalPrice {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.totalPrice span {
+    color: #222;
+    font-weight: 600;
+}
+
+.Count {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #c4c4c4;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #222;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+
+.Count svg {
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.Count svg:hover {
+    color: #CD4E17;
+    transform: scale(1.2);
+}
+
+.cartBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    position: relative;
+}
+
+.cartBtns::after {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 4px;
+    border-radius: 15px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+}
+
+.cartBtns p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1D1D1D;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.cartBtns p span {
+    font-weight: 500;
+    color: #9A070E;
+    margin-right: 8px;
+}
+
+.cartBtns a {
+    background: linear-gradient(135deg, #CD4E17, #9A070E);
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cartBtns a:hover {
+    background: linear-gradient(135deg, #9A070E, #CD4E17);
+    transform: translateY(-2px);
+}
+
+.CartEmpty {
+    color: rgb(207, 207, 207);
+    font-size: 25px;
+    margin-top: 50px;
+}

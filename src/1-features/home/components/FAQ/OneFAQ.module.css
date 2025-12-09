@@ -1,0 +1,50 @@
+.oneFAQ {
+    background-color: #1D1D1D;
+    border-radius: 8px;
+    border: 3px solid #CD4E17;
+    color: white;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+    margin-bottom: 25px;
+}
+
+.FAQContainer {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    margin-bottom: -2px;
+    border-bottom: 3px solid #CD4E17;
+    transition: 0.3s ease-out;
+}
+
+.FAQContainer.open,
+.oneFAQ.open {
+    border-color: #D90A14;
+}
+
+
+
+.FAQContainer h3 {
+    font-size: 23px;
+}
+
+.openIcon {
+    font-size: 40px;
+    color: #CD4E17;
+}
+
+.openIcon.open {
+    color: #D90A14;
+}
+
+.answer {
+    text-align: start;
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 18px;
+    color: rgb(190, 190, 190);
+}

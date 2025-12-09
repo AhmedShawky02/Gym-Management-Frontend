@@ -1,0 +1,218 @@
+.container {
+    overflow: hidden;
+    background-image: url("../../../../3-assets/login.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    background-color: rgba(0, 0, 0, 0.728);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 400px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px;
+    position: relative;
+    box-shadow: 0px 0px 5px #CD4E17;
+}
+
+.logo {
+    width: 110px;
+    border-radius: 50%;
+    display: block;
+    outline: 2px solid #CD4E17;
+    box-shadow: 0px 0px 10px #CD4E17;
+    margin: auto;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text {
+    color: white;
+    font-size: 50px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid #CD4E17;
+    color: white;
+    font-weight: 700;
+}
+
+.label {
+    position: absolute;
+    font-weight: 700;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    pointer-events: none;
+    color: #CD4E17;
+}
+
+/* لما يكون فيه كتابة أو focus */
+.input:focus~.label,
+.input:not(:placeholder-shown)~.label {
+    top: -12px;
+    font-size: CD4E17;
+    color: #CD4E17;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background-color: #CD4E17;
+    color: white;
+    cursor: pointer;
+}
+
+.signup {
+    display: flex;
+    color: white;
+    margin-top: 10px;
+    gap: 0.4rem;
+}
+
+.signup a {
+    color: white;
+}
+
+.errors {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.errorMessage {
+    font-size: 1.2rem;
+    background-color: rgba(255, 0, 0, 0.468);
+    border-radius: 5px;
+    width: 200px;
+}
+
+.errors ul {
+    text-align: start;
+    padding: 0;
+}
+
+@media (max-width: 1400px) {
+    .main {
+        height: 700px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 100px;
+        top: -55px;
+    }
+
+    .text {
+        font-size: 40px;
+    }
+
+    .errorMessage {
+        font-size: 1.1rem;
+    }
+
+    .form {
+        width: 350px;
+        height: 400px;
+    }
+
+    .input {
+        font-size: 15px;
+        width: 250px;
+    }
+
+    .errors ul {
+        width: 250px;
+        font-size: 15px;
+    }
+
+    .signup {
+        font-size: 13px;
+        width: 250px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 410px) {
+    .logo {
+        width: 80px;
+        top: -50px;
+    }
+
+    .form {
+        width: 250px;
+        height: 400px;
+    }
+
+    .text {
+        font-size: 35px;
+    }
+
+    .errorMessage {
+        font-size: 1rem;
+    }
+
+    .input {
+        font-size: 15px;
+        width: 200px;
+    }
+
+    .btn {
+        height: 35px;
+        font-size: 1.1rem;
+    }
+
+    .errors ul {
+        width: 150px;
+        font-size: 13px;
+    }
+
+    .errors ul li {
+        padding-bottom: 2px;
+    }
+
+    .signup {
+        font-size: 13px;
+        width: 250px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+}

@@ -1,0 +1,272 @@
+@import url('https://fonts.cdnfonts.com/css/gagalin');
+
+.Plans_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    position: relative;
+    min-height: 600px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.Plans_section .title {
+    color: #fff;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+.Plans_section .span_title {
+    color: #D90A14;
+}
+
+.Plans_section .suptitle {
+    color: white;
+    padding: 0 30px;
+}
+
+.plan {
+    width: 390px;
+    height: 560px;
+    margin: auto;
+    padding: 20px;
+    border: 4px solid #CD4E17;
+    background-color: #1d1d1d93;
+    border-radius: 8px;
+    position: relative;
+    transition: 0.4s ease-out;
+    z-index: 1;
+    transform: scale(0.95);
+
+}
+
+.plan::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 600px;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse, #cd4e172c, transparent 70%);
+}
+
+.plan:hover {
+    transform: scale(1);
+    z-index: 1;
+}
+
+.plan_title {
+    font-family: 'Gagalin', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: rgb(236, 236, 236);
+    margin: 15px 0;
+    height: 38px;
+}
+
+.staticTitle {
+    color: #CD4E17;
+    margin: 10px 0;
+}
+
+.plan_suptitle {
+    text-align: start;
+    height: 60px;
+    margin: 15px 0;
+    color: rgb(236, 236, 236);
+}
+
+.plan ul {
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    margin: 15px 0;
+    text-align: start;
+    color: rgb(236, 236, 236);
+    margin: 5px 0;
+    height: 154px;
+}
+
+.plan_price {
+    color: rgb(236, 236, 236);
+    font-size: 28px;
+    height: 44px;
+    margin: 15px 0;
+
+}
+
+.span_Price {
+    font-size: 14px;
+    color: #8B8B8B;
+}
+
+.plan_btn {
+    height: 44px;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background-color: #CD4E17;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+}
+
+:global(.swiper) {
+    width: 100%;
+    padding-bottom: 120px;
+    padding-top: 20px;
+}
+
+:global(.swiper-slide-next) .plan {
+    border: 4px solid #D90A14;
+    transform: scale(1);
+}
+
+:global(.swiper-slide-next) .plan::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 600px;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse, #77060c3d, transparent 70%);
+}
+
+:global(.swiper-slide-next) .plan .staticTitle {
+    color: #D90A14;
+}
+
+:global(.swiper-button-prev),
+:global(.swiper-button-next) {
+    position: absolute;
+    top: 90%;
+    color: white;
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    z-index: 22;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+:global(.swiper-button-prev) {
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+:global(.swiper-button-next) {
+    left: 55%;
+    transform: translateX(-50%);
+}
+
+:global(.swiper-pagination-bullet) {
+    background: #666666;
+    opacity: 0.8;
+}
+
+:global(.swiper-pagination-bullet-active) {
+    background: #D90A14;
+    opacity: 1;
+}
+
+/* 3 Card */
+@media screen and (max-width: 1390px) {
+    .plan {
+        width: 350px;
+        height: 560px;
+        margin: auto;
+        padding: 20px 25px;
+    }
+
+    :global(.swiper) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* 2 Card */
+@media screen and (max-width: 1242px) {
+    .plan {
+        width: 400px;
+        height: 560px;
+    }
+
+    :global(.swiper-slide-next) .plan {
+        border: 4px solid #CD4E17;
+    }
+
+    :global(.swiper-slide-next) .plan::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 450px;
+        height: 600px;
+        z-index: 0;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(ellipse, #cd4e172c, transparent 70%);
+    }
+
+    :global(.swiper-slide-next) .plan .staticTitle {
+        color: #CD4E17;
+    }
+
+}
+
+@media screen and (max-width: 948px) {
+    .plan {
+        width: 350px;
+        height: 560px;
+    }
+}
+
+/* 1 Card */
+@media screen and (max-width: 847px) {
+    .plan {
+        width: 450px;
+        height: 560px;
+    }
+
+    :global(.swiper-button-prev) {
+        left: 40%;
+        transform: translateX(-50%);
+    }
+
+    :global(.swiper-button-next) {
+        left: 60%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .plan {
+        width: 380px;
+        height: 560px;
+    }
+
+    .Plans_section {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .plan {
+        width: 320px;
+        height: 560px;
+    }
+
+    .Plans_section {
+        padding: 20px;
+    }
+}

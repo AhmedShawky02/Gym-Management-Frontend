@@ -1,0 +1,34 @@
+.FAQ_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    min-height: 600px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.FAQ_section .title {
+    color: #fff;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+.FAQ_section .span_title {
+    color: #D90A14;
+}
+
+.FAQ_section .suptitle {
+    color: white;
+    padding: 0 30px;
+}
+
+.container {
+    width: 100%;
+}
+

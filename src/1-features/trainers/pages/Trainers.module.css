@@ -1,0 +1,212 @@
+/* ====== Section Layout ====== */
+.container {
+    padding: 120px;
+    width: 100%;
+}
+
+.TrainersSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    gap: 50px;
+}
+
+.centered {
+    display: flex;
+    justify-content: start;
+    margin-left: 26px;
+    gap: 1.5rem;
+}
+
+
+/* ====== Trainer Card ====== */
+.TrainerCard {
+    background: #2a2a2a;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+    width: 100%;
+    max-width: 450px;
+}
+
+.TrainerCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* ====== Image Styling ====== */
+.TrainerImage {
+    width: 250px;
+    height: 280px;
+    margin: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    margin-top: 10px;
+}
+
+/* ====== Trainer Info ====== */
+.TrainerInfo {
+    border-top: 3px solid #cd4e17;
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TrainerInfo h3 {
+    margin: 0.5rem 0 0.3rem;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.Specialization {
+    font-size: 20px;
+    color: #cd4e17;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.TrainerInfo p {
+    margin: 0.3rem 0;
+    font-size: 20px;
+    width: 100%;
+    color: #cfcfcf;
+}
+
+/* ====== Buttons ====== */
+.LinksBtn {
+    margin-top: 0.8rem;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.LinksBtn button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: #cd4e17;
+    color: #fff;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.LinksBtn button:hover {
+    background: #9a070e;
+    transform: scale(1.05);
+}
+
+/* ====== Loading And Error State ====== */
+.containerLoading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    background: #1d1d1d;
+}
+
+.error {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border-left: 5px solid red;
+    box-shadow: 0px 0px 5px white;
+    width: 100%;
+    overflow: hidden;
+}
+
+.loading {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border-left: 5px solid rgb(255, 136, 0);
+    box-shadow: 0px 0px 5px white;
+    width: 100%;
+
+}
+
+/* ====== Search And Sort ====== */
+
+.SearchAndSort {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+/* ====== Sort ====== */
+.sort {
+    margin-left: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: start;
+    justify-content: start;
+}
+
+.sort select {
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px 15px;
+    outline: none;
+    border: 2px solid #333;
+    color: #fff;
+    background-color: #1c1c1c;
+    font-size: 18px;
+    transition: 0.3s ease;
+    appearance: none;
+    cursor: pointer;
+    padding-right: 50px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 35px;
+}
+
+.sort select:focus {
+    border-color: #CD4E17;
+    box-shadow: 0 0 8px rgba(205, 78, 23, 0.5);
+}
+
+/* ====== Search ====== */
+.search {
+    margin-left: 15px;
+    width: 50%;
+    display: flex;
+    gap: 15px;
+    align-items: start;
+    justify-content: start;
+}
+
+.search input {
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px 15px;
+    outline: none;
+    border: 2px solid #333;
+    color: #fff;
+    background-color: #1c1c1c;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.search input::placeholder {
+    color: #aaa;
+}
+
+.search input:focus {
+    border-color: #CD4E17;
+    box-shadow: 0 0 8px rgba(205, 78, 23, 0.5);
+}
